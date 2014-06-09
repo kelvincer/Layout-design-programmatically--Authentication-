@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cerv.authentication_layout.app.MainActivity">
+
+
+    <com.cerv.authentication_layout.app.AspectRatioImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/company1" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:layout_below="@+id/image"
+        android:background="@android:color/darker_gray" />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/line"
+        android:background="@android:color/holo_green_light" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvido su contraseña?"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp"
+        android:textSize="20dp"
+        android:id="@+id/question"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v. 1.6"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="15dp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+       />
+
+
+
+</RelativeLayout>
